@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-# INDEF recording of 10 minute clips till MIN_FREE_GB
+# INDEFINITE recording of 10 minute clips till MIN_FREE_GB
 import os, shutil, subprocess
 from datetime import datetime
 #!/usr/bin/env python3
