@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/local/bin/python3
 # Take a 5 second test video with rpicam
 import os, subprocess
 from datetime import datetime
