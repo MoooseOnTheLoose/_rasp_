@@ -1,6 +1,7 @@
 # AICAM (Raspberry Pi) 
 
 UPDATED: 1/20/2026
+
 PLANNING: 
 1. Single authoritative storage path selection logic
 2. Unified logging configuration (paths, rotation, verbosity)
