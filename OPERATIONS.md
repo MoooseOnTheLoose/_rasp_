@@ -1,4 +1,4 @@
-🛠️ **OPERATIONS.md — Canonical Operations Guide**
+🛠️ **OPERATIONS.md — Operations Guide**
 Rasp AI Camera (AICAM / Rasp)
 
 ---
