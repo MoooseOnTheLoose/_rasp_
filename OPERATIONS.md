@@ -1,7 +1,7 @@
 🛠️ **OPERATIONS.md — Operations Guide**
 Rasp AI Camera (AICAM / Rasp)
 
-UPDATE:1/20/2026
+UPDATE:1/21/2026
 ---
 
 ## Why This Document Exists
@@ -120,7 +120,7 @@ ls -lh /media/user/disk/images
 
 Example:
 ```bash
-./rpicam-video.sh
+./rpicam-VIDSec.sh
 ```
 
 Verify:
@@ -192,6 +192,88 @@ Never power off with mounted encrypted storage.
 
 ---
 
+
+
+---
+
+## Python Operation Examples
+
+These examples run the **Python equivalents** of the shell scripts. They follow the same rules:
+- The encrypted disk must be unlocked and mounted first.
+- Verify output exists before ending a session.
+
+### Still Capture (Python)
+
+```bash
+python3 1_rpiCAMStill.py
+```
+
+Verify:
+```bash
+ls -lh /media/user/disk/images
+```
+
+### Video Capture / Segmented Recording (Python)
+
+```bash
+python3 3_rpiVIDSec.py
+```
+
+Verify:
+```bash
+ls -lh /media/user/disk/videos
+```
+
+Logs (when writable):
+- `/var/log/rpicam/rpicam.log`
+- fallback: `~/.local/state/rpicam/rpicam.log`
+
+---
+
+## Python Virtual Environment (venv) Example
+
+Use a venv when you need Python packages beyond the OS defaults.
+
+### Install venv support (one-time)
+
+```bash
+sudo apt update
+sudo apt install -y python3-venv python3-pip
+```
+
+### Create + activate venv
+
+From the project directory:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip wheel
+```
+
+### Install dependencies
+
+If you have a requirements file:
+
+```bash
+pip install -r requirements.txt
+```
+
+If you do not, install only what the script actually imports/needs.
+
+### Run scripts inside venv
+
+```bash
+python 1_rpiCAMStill.py
+python 3_rpiVIDSec.py
+```
+
+### Deactivate
+
+```bash
+deactivate
+```
+
 ## Safe Defaults Checklist
 
 Before walking away:
@@ -237,3 +319,5 @@ If the system changes and this file does not, **the documentation is wrong**.
 ## Final Rule
 
 > **If an operation is not written here, it is not part of the supported workflow.**
+>
+> ![image](https://github.com/user-attachments/assets/093eb37f-d4db-4f20-ba24-9a7ee37f2896)
