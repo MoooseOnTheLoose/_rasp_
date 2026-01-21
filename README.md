@@ -248,3 +248,6 @@ preserve dependency integrity and reduce host impact. Operational details, inclu
 example commands and environment setup, are documented in `OPERATIONS.md`.
 
 Refer to **OPERATIONS.md** for authoritative, step-by-step execution guidance.
+
+![image](https://github.com/user-attachments/assets/991a7fa5-e4e0-4704-bc8f-f65678e4d3d4)
+
