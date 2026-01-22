@@ -1,7 +1,7 @@
 🧠 **ARCHITECTURE.md**
 Rasp AI Camera (AICAM / Rasp)
 
-UPDATED:1/20/20206
+UPDATED:1/21/2026
 ---
 
 ## Why This Document Exists
